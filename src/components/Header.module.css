@@ -1,0 +1,11 @@
+/*Quando usamos CSS Modules usamos apenas classes, evitando ao máximo ID ou qualquer tipo de seleção*/
+.header {
+  background: var(--gray-800);
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem 0; /*Se um rem é 16px, 0.25 é 4px; total 20px*/
+}
+
+.header img {
+  height: 2rem; /*32px*/
+}

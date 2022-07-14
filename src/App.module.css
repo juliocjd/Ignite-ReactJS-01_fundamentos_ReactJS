@@ -1,0 +1,19 @@
+.wrapper {
+  max-width: 70rem; /*16*70 = 1120px*/
+  margin: 2rem auto; /*2 para cima e baixo, auto para laterais*/
+  padding: 0 1rem;
+
+  display: grid;
+
+  grid-template-columns: 256px 1fr; /*minha primeira largura, que é do sidebar tem um valor fixo de 256px; o segundo vai se adaptar conforme couber na tela, colocarei 1fr (que significa que o tamanho será flexível */
+
+  gap: 2rem; /*espaçamento entre as colunas de 32px*/
+
+  align-items: flex-start; /*isso fará com que a sidebar e a main sempre fiquem alinhados para o topo; o padrão não é alinhar para o topo, mas esticar os dois para que tenham o mesmo tamanho. Se a gente não colocar o flex-start ele vai tentar forçar para que nosso sidebar tenha a mesma altura do main*/
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
